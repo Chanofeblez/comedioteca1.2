@@ -1,0 +1,119 @@
+<!-- <app-poster-grid ></app-poster-grid> -->
+
+<!-- <div class="container row">
+
+    <h2 class="col-md-12 mt-5">Artistas</h2>
+
+    <div class="col-md-12 row mt-5">
+        <div class="col-md-3 mb-5" *ngFor="let item of comediantesPaises">
+
+            <img [src]="item.image" class="img-fluid poster" (click)="onVideoClick( item )">
+
+            <div class="mt-3 text-center">
+                <h4>{{ item.name }}</h4>
+            </div>
+
+        </div>
+    </div>
+
+</div> -->
+<div class="container">
+
+    <div class="row cajaResultado">
+
+        <div class="col-md-12 d-flex mt-5 cajaBuscar">
+            <input type="search" placeholder="Buscar" aria-label="Search" #txtBuscar (keyup.enter)="buscarPelicula(txtBuscar.value)">
+        </div>
+
+        <div class="col-md-12 mt-5 ">
+            <a class="card-link text-uppercase" (click)="todosLosResultados()">Todos</a>
+            <a class="card-link text-uppercase" (click)="mostrarArtistas()">Artistas</a>
+            <a class="card-link text-uppercase" (click)="mostrarVideos()">Videos</a>
+        </div>
+
+        <h2 class="m-5" *ngIf="noEncontrado">No hemos encontrado nada, pero le sugerimos..</h2>
+
+        <div class="col-md-12 mt-5 cajaMostrar" *ngIf="vacioPerfil && vacioVideo">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col " *ngFor="let comediante of comediantes">
+                    <div class="card h-80 targeta" (click)="onVideoClick(comediante)">
+                        <img [src]="comediante.image" alt="" class="">
+                        <div class="row">
+                            <div class="col-md-8 description">
+                                <h5 class="text-start text-uppercase">{{ comediante.name }}</h5>
+                                <p class="text-start text-uppercase">{{ comediante.country }}</p>
+                            </div>
+                            <div class="col-md-4 description1">
+                                <i class="fab fa-facebook-f boton"></i>
+                                <i class="fab fa-youtube boton"></i>
+                                <i class="fab fa-instagram boton"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mt-5 cajaMostrar" *ngIf="artistasBandera ">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col " *ngFor="let comediante of comediantesPerfil">
+                    <div class="card h-80 targeta" (click)="onVideoClick(comediante)">
+                        <img [src]="comediante.image" alt="" class="">
+                        <div class="row">
+                            <div class="col-md-8 description">
+                                <h5 class="text-start text-uppercase">{{ comediante.name }}</h5>
+                                <p class="text-start text-uppercase">{{ comediante.country }}</p>
+                            </div>
+                            <div class="col-md-4 description1">
+                                <i class="fab fa-facebook-f boton"></i>
+                                <i class="fab fa-youtube boton"></i>
+                                <i class="fab fa-instagram boton"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mt-5 cajaMostrar" *ngIf="videosBandera">
+            <div class="row row-cols-1 row-cols-md-3 g-4 cuadro">
+                <div class="col " *ngFor="let video of videosFiltrados">
+                    <div class="card h-80 targeta" (click)="onVideoClick(comediante)">
+                        <div class="cajaVideo">
+                            <div class="icono" (click)="mostrarVideo(video)">
+                                <i class="far fa-play-circle "></i>
+                            </div>
+                            <img [src]="video.snippet.thumbnails.medium.url" alt="">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="text-start text-uppercase">{{ video.snippet.localized.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="col-md-12 mt-5 cajaMostrar">
+            <div class="cuadro">
+                <div *ngFor="let video of videosFiltrados">
+
+                    <div class="cajaVideo">
+                        <div class="icono" (click)="mostrarVideo(video)">
+                            <i class="far fa-play-circle "></i>
+                        </div>
+                        <img [src]="video.snippet.thumbnails.medium.url" alt="">
+
+                    </div>
+                    <div>
+                        <h5 class="text-start text-uppercase">{{ video.snippet.localized.title }}</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> -->
+    </div>
+
+</div>

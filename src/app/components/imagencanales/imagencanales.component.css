@@ -1,0 +1,30 @@
+.base {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.tira {
+    width: 100%;
+    height: 250px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuadro {
+    width: 22%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    margin-top: -40px;
+}
+
+.cuadro img {
+    width: 110%;
+    height: 110%;
+}

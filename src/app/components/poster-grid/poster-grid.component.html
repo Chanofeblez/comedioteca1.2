@@ -1,0 +1,17 @@
+<div class="container row">
+
+    <p class="col-md-12">Artistas</p>
+
+    <div class="col-md-12 row">
+        <div class="col-md-3 mb-5" *ngFor="let video of videos">
+
+            <img [src]="video.snippet.thumbnails.default.url" class="img-fluid poster" (click)="onVideoClick( video )">
+
+            <div>
+                <h3>{{ video.snippet.title }}</h3>
+            </div>
+
+        </div>
+    </div>
+
+</div>

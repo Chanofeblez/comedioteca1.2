@@ -1,0 +1,55 @@
+.carrusel {
+    width: 100%;
+    max-height: 500px;
+    height: 500px;
+    background-color: rgb(7, 7, 7);
+}
+
+.titulo {
+    color: #ff7b17;
+    font-family: dosis;
+}
+
+.targeta {
+    width: 250px;
+    overflow: hidden;
+    border: none;
+    background-color: black;
+}
+
+.description {
+    background-color: #404040;
+    height: 100%;
+}
+
+.description1 {
+    background-color: #000000;
+    height: 100%;
+}
+
+h5 {
+    font-family: dosis;
+    color: white;
+    font-size: 11px;
+    margin-top: 6px;
+    margin-bottom: 0%;
+    margin-left: 5px;
+}
+
+p {
+    font-family: dosis;
+    margin: 0%;
+    color: #fb7712;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.boton {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 2%;
+    margin-top: 10%;
+    color: #fb7712;
+    margin-right: 5%;
+}

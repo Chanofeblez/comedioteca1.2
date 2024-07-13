@@ -1,0 +1,44 @@
+.home {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.home-form {
+    width: 100%;
+    height: 100%;
+}
+
+.home-alert {
+    width: 100%;
+    font-size: .9rem;
+    padding: .75rem;
+    font-weight: 500;
+    border-radius: 1px;
+    box-shadow: -2px 5px 20px 0 rgb(173 173 173 / 19%);
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.home-form button {
+    margin-top: .5rem;
+    background-color: #1f4287;
+    border-radius: .75rem;
+    border: 0;
+    padding: .5rem;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+.home-btn {
+    margin-top: 1rem;
+}

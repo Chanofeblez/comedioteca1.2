@@ -1,0 +1,101 @@
+#footer {
+    width: 100%;
+    height: 420px;
+    max-height: 350px;
+}
+
+.superior {
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    background: #404040;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inferior {
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+    background: #fb7712;
+}
+
+.barra {
+    width: 100%;
+    height: 70px;
+    max-height: 50px;
+    background: #000000;
+}
+
+.izquierda {
+    width: 25%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centro {
+    width: 25%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.derecha {
+    width: 25%;
+    height: 250px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: #666666;
+}
+
+.nombre {
+    width: 95%;
+}
+
+.email {
+    width: 95%;
+}
+
+.mensaje {
+    width: 95%;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    height: 60px;
+}
+
+h2,
+.medias {
+    color: #666666;
+    font-family: dosis;
+    text-transform: uppercase;
+}
+
+.error {
+    font-size: 10px;
+}
+
+.boton {
+    font-family: dosis;
+    text-transform: uppercase;
+    color: #fb7712;
+    border: 1px solid #fb7712;
+}
+
+.boton :hover {
+    font-family: dosis;
+    text-transform: uppercase;
+    background-color: #fb7712 !important;
+    color: #fb7712;
+    border: 1px solid #ffffff;
+}

@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12 mt-5">
+            <h2>Videos</h2>
+        </div>
+
+        <!-- <div class="search mt-3">
+        <div class="d-flex">
+            <input #txtBuscar (keyup.enter)="buscarPelicula(txtBuscar.value)" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button (click)="buscarPelicula(txtBuscar.value)" class="btn btn-primary" type="submit"> 
+                Search
+            </button>
+        </div>
+        </div> -->
+
+        <div class="col-md-12 ">
+            <div class="cuadro container ">
+                <div *ngFor="let video of videos">
+                    <div class="caja">
+                        <div class="icono" (click)="mostrarVideo(video)">
+                            <i class="far fa-play-circle "></i>
+                        </div>
+                        <img [src]="video.snippet.thumbnails.medium.url" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--  <div class="col--md-12 mt-5" *ngIf="bandera === true && videosFiltrados.length <= 0">
+            <h3>No se ha encontrado.</h3>
+        </div>
+
+         <div class="videos mt-3" *ngIf="videosFiltrados.length <= 0 && bandera === false">
+        <div class="tarjeta m-2" *ngFor="let video of videos">
+            <h5 class="card-title text-center">{{ video.snippet.channelTitle }}</h5>
+            <img [src]="video.snippet.thumbnails.high.url" alt="" class="card-img-top" />
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button" (click)="mostrarVideo(video)">
+                          Ver Video
+                        </button>
+                </div>
+            </div>
+        </div>
+       </div> 
+
+        <div class="videos mt-3">
+            <div class="tarjeta m-2" *ngFor="let video of videosFiltrados">
+                <h5 class="card-title text-center">{{ video.snippet.channelTitle }}</h5>
+                <img [src]="video.snippet.thumbnails.high.url" alt="" class="card-img-top" />
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button" (click)="mostrarVideo(video)">
+                          Ver Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>

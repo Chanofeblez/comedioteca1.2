@@ -1,0 +1,40 @@
+.tira {
+    width: 100%;
+    max-height: 220px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-height: 220px;
+}
+
+.caja {
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 20%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartel {
+    font-size: 14px;
+}
+
+.boton {
+    width: 230px;
+    height: 60px;
+    font-family: dosis;
+    font-size: 18px;
+    font-style: italic;
+    background-color: #fb7712;
+    border-radius: 3%;
+    border: 1px solid white;
+}
+
+h2,
+h4 {
+    font-family: dosis;
+}

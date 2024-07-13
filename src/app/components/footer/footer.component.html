@@ -1,0 +1,67 @@
+<div id="footer ">
+    <div class="barra "></div>
+    <div class="superior container">
+        <div class="izquierda">
+            <div>
+                <h2 class="mt-3">Nosotros</h2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sint asperiores corrupti sit, veniam eius neque facilis obcaecati voluptate. Pariatur cumque quas excepturi id, eveniet a perspiciatis earum laudantium soluta?</p>
+            </div>
+            <div>
+                <img src="../../../assets/logo/LOGO FINAL.png" alt="" width="98" height="45">
+            </div>
+        </div>
+        <div class="centro">
+            <div>
+                <h2 class="mt-3">Contactanos</h2>
+            </div>
+            <form class="form-horizontal form-material" autocomplete="off" [formGroup]="crearMensajeForm" (ngSubmit)="crearMensaje()">
+                <div class="mb-3 nombre">
+                    <input type="text" class="form-control ml-2" placeholder="NOMBRE*" formControlName="nombre">
+                </div>
+                <div class="mb-3 email">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EMAIL" formControlName="email">
+                </div>
+                <div class="mb-3 mensaje">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="MENSAJE" formControlName="mensaje"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col text-danger">
+                        <p *ngIf="campoNoValido('nombre')" class="error">El nombre es obligatorio</p>
+                        <p *ngIf="campoNoValido('email')" class="error">El email es obligatorio y tiene que ser válido</p>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <button type="submit" class="btn btn-outline-warning boton">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="derecha">
+            <div>
+                <h2 class="mt-3">Perfiles</h2>
+            </div>
+            <div>
+                <div class="redes mt-3">
+                    <i class="fas fa-envelope mt-1"></i>
+                    <p class="medias">latinoscomedy@gmail.com</p>
+                </div>
+                <div class="redes">
+                    <i class="fab fa-facebook mt-1"></i>
+                    <p class="medias">latinoscomedy</p>
+                </div>
+                <div class="redes">
+                    <i class="fab fa-instagram mt-1"></i>
+                    <p class="medias">latinos_comedy</p>
+                </div>
+                <div class="redes">
+                    <i class="fab fa-youtube mt-1"></i>
+                    <p class="medias">latinoscomedy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inferior text-center p-3">
+        LATINOSCOMEDY &copy;. All rights reserved. {{ year }}
+    </div>
+</div>

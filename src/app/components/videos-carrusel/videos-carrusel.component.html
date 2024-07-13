@@ -1,0 +1,71 @@
+<!-- <div class="row ">
+    <div class="col-md-12">
+        <h2 class="container mt-5 titulo">VIDEOS</h2>
+    </div>
+    <div class="col-md-12 ">
+        <div class="swiper container mt-5">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide text-center" *ngFor="let video of videos">
+                    <h4 class="tituloImagen text-center">{{ video.snippet.channelTitle }}</h4>
+                    <div class="mostrar">
+                        <button fill="clear" (click)=" mostrarVideo(video)">
+                            <i class="far fa-play-circle 7x" size:7x></i>
+                        </button>
+                    </div>
+                    <img [src]="video.snippet.thumbnails.medium.url" alt="" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="row ">
+    <div class="col-md-12">
+        <h2 class="container mt-5 titulo">VIDEOS</h2>
+    </div>
+
+    <div class="col-md-12 ">
+        <div class="cuadro container ">
+            <div class="caja cuadro1 ">
+                <div class="icono" (click)="mostrarVideo(videos[arregloAleatorio[0]])">
+                    <i class="far fa-play-circle "></i>
+                </div>
+                <img [src]="videos[arregloAleatorio[0]].snippet.thumbnails.medium.url" alt="">
+            </div>
+            <div class="caja cuadro2">
+                <div class="icono" (click)="mostrarVideo(videos[arregloAleatorio[1]])">
+                    <i class="far fa-play-circle "></i>
+                </div>
+                <img [src]="videos[arregloAleatorio[1]].snippet.thumbnails.medium.url" alt="">
+            </div>
+            <div class="caja cuadro3">
+                <div class="icono" (click)="mostrarVideo(videos[arregloAleatorio[2]])">
+                    <i class="far fa-play-circle "></i>
+                </div>
+                <img [src]="videos[arregloAleatorio[2]].snippet.thumbnails.medium.url" alt="">
+            </div>
+            <div class="caja cuadro4">
+                <div class="icono" (click)="mostrarVideo(videos[arregloAleatorio[3]])">
+                    <i class="far fa-play-circle "></i>
+                </div>
+                <img [src]="videos[arregloAleatorio[3]].snippet.thumbnails.medium.url" alt="">
+            </div>
+            <div class="caja cuadro5">
+                <div class="icono" (click)="mostrarVideo(videos[arregloAleatorio[4]])">
+                    <i class="far fa-play-circle "></i>
+                </div>
+                <img [src]="videos[arregloAleatorio[4]].snippet.thumbnails.medium.url" alt="">
+            </div>
+            <div class="caja cuadro6">
+                <div class="icono" (click)="mostrarVideo(videos[arregloAleatorio[5]])">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <img [src]="videos[arregloAleatorio[5]].snippet.thumbnails.medium.url" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</div>

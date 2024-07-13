@@ -1,0 +1,45 @@
+<div class="fondo-modal-donacion animated fadeIn fast" [class.oculto]="modalService.ocultarModal">
+
+    <div class="modal fade show" id="exampleModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel1" style="display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel1"> Nombre</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="home" *ngIf="primero">
+                        <div class="home-form">
+                            <div class="home-alert">
+                                A continuacion ingresa el monto a cobrar y el nombre del cliente!<br> Si quieres ver la explicación y configuracion de este proyecto <b><a href="https://youtu.be/6ZSQo5DYmyo" target="_blank">Ver video</a></b>
+                            </div>
+                            <div class="form">
+                                <form [formGroup]="form" (submit)="init()">
+                                    <div class="input">
+                                        <label class="label">Nombre</label>
+                                        <input type="text" formControlName="name" placeholder="Escriba su nombre">
+                                    </div>
+                                    <div class="input">
+                                        <label class="label">Monto</label>
+                                        <input type="text" formControlName="amount" placeholder="Introduzca la cantidad deseada">
+                                    </div>
+                                    <div class="home-btn">
+                                        <button [disabled]="form.invalid">Generar Link</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <app-checkout-page *ngIf="!primero" [id]="this.localizator" (primero)="cambiarEstado($event)"></app-checkout-page>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" (click)="cerrarModal()" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Donar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

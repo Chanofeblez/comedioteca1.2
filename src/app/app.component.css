@@ -1,0 +1,15 @@
+.navegador {
+    width: 99%;
+    height: 80px;
+    background-color: black;
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: #404040;
+}
+
+.bady {
+    padding-right: 0%;
+}

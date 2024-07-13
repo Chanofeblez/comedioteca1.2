@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-md-12">
+            <h2 class=" mt-5 titulo">ARTISTAS</h2>
+        </div>
+
+        <div class="col-md-12 ">
+            <div class="swiper  mt-5">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper ">
+                    <!-- Slides -->
+                    <div class="swiper-slide" *ngFor="let comediante of comediantes">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col ">
+                                <div class="card h-100 targeta ">
+                                    <img [src]="comediante.image" alt="" class="">
+                                    <div class="row">
+                                        <div class="col-md-8 description">
+                                            <h5 class="text-start text-uppercase">{{ comediante.name }}</h5>
+                                            <p class="text-start text-uppercase">{{ comediante.country }}</p>
+                                        </div>
+                                        <div class="col-md-4 description1">
+                                            <i class="fab fa-facebook-f boton"></i>
+                                            <i class="fab fa-youtube boton"></i>
+                                            <i class="fab fa-instagram boton"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
